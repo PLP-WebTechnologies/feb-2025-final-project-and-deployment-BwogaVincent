@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Wonerful Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="c:\Users\ECT ADMIN\Downloads\pexels-hakam-magdea-2151202916-31596552 (1).jpg" alt="Website Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="formMessage" class="success-message hidden"></p>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Our Location</h2>
+            <p>Savannah Road, Nairobi, Kenya</p>
+            <p>Email: bwoga1989@gmail.com</p>
+            <p>Phone: +254 715276583</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>@copy; 2025 My Wonderful Website</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
